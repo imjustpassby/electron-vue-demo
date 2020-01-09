@@ -16,14 +16,17 @@ protocol.registerSchemesAsPrivileged([
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 1440,
-    height: 800,
+    width: 1330,
+    height: 960,
+    minWidth: 1330,
+    minHeight: 600,
+    backgroundColor: '#f5f5f5',
+    icon: `${__static}/app.ico`,
     webPreferences: {
       nodeIntegration: true,
       webSecurity: false
     }
   });
-
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
     win.loadURL(process.env.WEBPACK_DEV_SERVER_URL);
