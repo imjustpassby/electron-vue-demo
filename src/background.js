@@ -21,6 +21,7 @@ function createWindow() {
     minWidth: 1330,
     minHeight: 600,
     backgroundColor: '#f5f5f5',
+    // eslint-disable-next-line no-undef
     icon: `${__static}/app.ico`,
     webPreferences: {
       nodeIntegration: true,

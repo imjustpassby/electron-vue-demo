@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import VueRouter  from 'vue-router'
+import VueRouter from 'vue-router'
+import Layout from '@/components/layout.vue'
 Vue.use(VueRouter)
-import Layout from "@/components/layout.vue"
+
 export default new VueRouter ({
   routes: [
     {
@@ -26,7 +27,7 @@ export default new VueRouter ({
         },
         {
           path: 'dj-radios',
-          name: "dj-radios",
+          name: 'dj-radios',
           component: () => import('@/views/dj/index')
         },
         {
@@ -47,12 +48,12 @@ export default new VueRouter ({
             {
               path: 'daily-recommend',
               name: 'daily-recommend',
-              component: () => import("@/views/myMusic/components/dailyRecommend")
+              component: () => import('@/views/myMusic/components/dailyRecommend')
             },
             {
               path: 'daily-playlist',
               name: 'daily-playlist',
-              component: () => import("@/views/myMusic/components/dailyPlaylist")
+              component: () => import('@/views/myMusic/components/dailyPlaylist')
             }
           ]
         },

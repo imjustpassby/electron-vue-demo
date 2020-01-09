@@ -2,6 +2,7 @@
   "name": "electron-vue-demo",
   "version": "0.1.0",
   "private": true,
+  "author": "imjustpassby",
   "scripts": {
     "start": "yarn run electron:serve",
     "serve": "vue-cli-service serve",
